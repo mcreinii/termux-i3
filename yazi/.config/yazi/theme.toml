@@ -1,0 +1,30 @@
+[app]
+overall = { bg = "#000000", fg = "#cfcfcf" }
+
+[mgr]
+cwd = { bg = "#000000", fg = "#cfcfcf", bold = true }
+hovered = { bg = "#111111", fg = "#ffffff", bold = true }
+preview = { bg = "#000000", fg = "#b5b5b5" }
+
+[status]
+overall = { bg = "#000000", fg = "#9e9e9e" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[indicator]
+padding = { open = "", close = "" }
+
+[mode]
+normal_main = { bg = "#000000", fg = "#cfcfcf" }
+normal_alt = { bg = "#000000", fg = "#9e9e9e" }
+
+[icon]
+globs = []
+dirs = []
+files = []
+exts = []
+conds = []
+prepend_conds = [{ if = "dir", text = "[D]" }]
+
+[filetype]
+rules = []
