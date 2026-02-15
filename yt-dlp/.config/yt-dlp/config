@@ -1,4 +1,8 @@
---js-runtimes node
---extractor-args youtube:player_client=android
--f bestaudio/best
--o '~/Musics/%(title)s.%(ext)s'
+  --js-runtimes node
+  --extractor-args youtube:player_client=android
+  -f "bestaudio/best"
+  -x --audio-format mp3
+  --embed-metadata
+  --embed-thumbnail
+  --convert-thumbnails jpg
+  -o '~/Musics/%(artist,uploader)s - %(title)s - %(album,playlist_title)s.%(ext)s'

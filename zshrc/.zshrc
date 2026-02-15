@@ -22,8 +22,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias yt-dlp='yt-dlp --js-runtimes node --extractor-args "youtube:player_client=android" -t mp3 -f "bv*+ba/b"'
-
-download() {
-    yt-dlp --js-runtimes node --extractor-args "youtube:player_client=android" -t mp3 -f "bv*+ba/b" "$@"
-}
+alias ytdl="yt-dlp"
