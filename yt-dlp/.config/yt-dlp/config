@@ -1,0 +1,4 @@
+--js-runtimes node
+--extractor-args youtube:player_client=android
+-f bestaudio/best
+-o '~/Musics/%(title)s.%(ext)s'

@@ -1,0 +1,9 @@
+[font]
+normal = { family = "Terminess Nerd Font Mono", style = "Regular" }
+size = 14
+
+[window]
+decorations = "None"
+
+[colors.primary]
+background = "#000000"
