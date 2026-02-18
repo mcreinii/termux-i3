@@ -1,9 +1,11 @@
 [font]
-normal = { family = "Terminess Nerd Font Mono", style = "Regular" }
-size = 14
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+size = 12
 
 [window]
 decorations = "None"
+opacity = 0.85
+padding = {x = 14, y=14}
 
 [colors.primary]
 background = "#000000"
