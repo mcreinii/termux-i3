@@ -7,6 +7,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+export EDITOR=nvim
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/mcreinii/.zshrc'
@@ -23,5 +25,17 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias ytdl="yt-dlp"
+mann ()
+{
+    man $1 | bat --language man
+}
 
 . "$HOME/.local/bin/env"
+
+# pnpm
+export PNPM_HOME="/home/mcreinii/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
